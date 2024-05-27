@@ -12,6 +12,8 @@ customer_banking/
 │   │   ├── Account.py
 │   │   ├── savings_account.py
 │   │   └── cd_account.py
+│   ├── utils/
+│   │   ├── input_validation.py
 │   ├── customer_banking.py
 ├── README.md
 ├── LICENSE
@@ -27,6 +29,8 @@ customer_banking/
 * Provides functionality to create a CD account, calculate interest earned, and update the account balance.<br>
 ```src/accounts/cd_account.py```
 
+* Provides helper functionality for user input valiation and could be expanded with additional functionality.<br>
+```src/utils/input_validation.py```
 
 * Main script that uses the savings and CD account functionality to demonstrate account operations.<br>
 ```src/customer_banking.py```

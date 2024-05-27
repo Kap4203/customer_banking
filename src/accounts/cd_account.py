@@ -1,8 +1,10 @@
 # src/accounts/cd_accounts.py
 
+# This contains the cd account business logic
+
 """Import the Account class from the Account.py file."""
 # ADD YOUR CODE HERE
-# Import the Account class from the Account module
+# Dependencies: Import the Account class from the Account module
 from .Account import Account as acct
 
 

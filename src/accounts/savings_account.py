@@ -1,8 +1,10 @@
 # src/accounts/savings_account.py
 
+# This contains the savings account business logic
+
 """Import the Account class from the Account.py file."""
 # ADD YOUR CODE HERE
-# Import the Account class from the Account module
+# Dependencies: Import the Account class from the Account module
 from .Account import Account
 
 # Define a function for the Savings Account
@@ -25,8 +27,6 @@ def create_savings_account(balance, interest_rate, months):
     savings_account = Account(balance=0.0, interest=0.0)
 
     # Set the initial balance and interest values of the account
-    # TODO: Validate function inputs
-    # TODO: Setting can be done within its own method call
     savings_account.set_balance(balance)
     savings_account.set_interest(interest_rate)
 
@@ -34,7 +34,7 @@ def create_savings_account(balance, interest_rate, months):
     # Calculate interest earned
     # ADD YOUR CODE HERE
     # interest = balance * (apr/100 * months/12) // Formula hint in step 2 of the 'Create the Savings Account Function' section
-      # the APR is directly given as the interest rate and so explicitly assigning here for clarity
+    # the APR is directly given as the interest rate and so explicitly assigning here for clarity
     apr = interest_rate
     interest_earned = balance * (apr/100 * months/12)
 
@@ -57,7 +57,7 @@ def create_savings_account(balance, interest_rate, months):
 def main():
     """Functional test of: create_savings_account(balance, interest_rate, months)  
     
-    Args:
+    Args: Setting user inputs to valiate system
         balance = 1000  # initial balance
         interest_rate = 5  # 5% apr
         months = 6  # duration in months
